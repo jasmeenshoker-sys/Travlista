@@ -1,0 +1,332 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 850px;
+    padding: 130px 80px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    background: #faf8f5;
+}
+
+.left{
+    padding-top: 40px;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.left h1{
+    font-size: 72px;
+    line-height: 1.1;
+    color: #1f2937;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.left .one{
+    color: #b8860b;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.left .two{
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.8;
+    max-width: 550px;
+    margin-bottom: 40px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.explore-btn{
+    padding: 15px 35px;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore-btn:hover{
+    background: #c58b45;
+}
+.video-btn{
+    padding: 15px 35px;
+    background: transparent;
+    color: #111827;
+    border: 2px solid #111827;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.video-btn:hover{
+    background: #111827;
+    color: white;
+}
+
+.hero-image{
+    width: 600px;
+    height: 720px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.cards{
+    width: 85%;
+    margin: -70px auto 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    z-index: 10;
+}
+
+.card{
+    width: 350px;
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(0,0,0,.15);
+}
+
+.card h2{
+    font-size: 40px;
+    color: #111827;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card p{
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.destination{
+    width: 85%;
+    margin:  auto;
+    text-align: center;
+}
+
+.destination h2{
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.destination p{
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.destination-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.box{
+    width: 450px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: translateY(-10px);
+}
+
+.box img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.box h3{
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #222;
+}
+
+.box p{
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.why{
+    width: 85%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.why h2{
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.why p{
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.why-box{
+    
+    display: flex;
+    gap: 25px;
+}
+
+.why-card{
+    height: 200px;
+    width: 350px;
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: .3s;
+}
+
+.why-card:hover{
+    transform: translateY(-10px);
+}
+
+.why-card h3{
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.why-card p{
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===================== TABLET ===================== */
+
+@media (max-width:992px){
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 120px 8%;
+        gap: 50px;
+    }
+
+    .left h1{
+        font-size: 55px;
+    }
+
+    .two{
+        width: 100%;
+    }
+
+    .hero-image{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card{
+        width: 48%;
+    }
+
+    .destination-box,
+    .why-box{
+        flex-wrap: wrap;
+    }
+
+    .box,
+    .why-card{
+        width: 48%;
+    }
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width:768px){
+
+    .hero{
+        padding: 100px 20px;
+    }
+
+    .left h1{
+        font-size: 38px;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-buttons button{
+        width: 100%;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .destination-box{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .why-box{
+        flex-direction: column;
+    }
+
+    .why-card{
+        width: 100%;
+    }
+
+}

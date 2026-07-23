@@ -1,0 +1,205 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.destination-hero{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.destination-content{
+    color: white;
+}
+
+.destination-content p{
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.destination-content h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.destination-content h4{
+    width: 650px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.destination-content button{
+    padding: 15px 35px;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.places{
+    width: 85%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.places h2{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.places > p{
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.place-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.place-card{
+    width: 31%;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.place-card:hover{
+    transform: translateY(-10px);
+}
+
+.place-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.place-card h3{
+    margin-top: 20px;
+    color: #222;
+}
+
+.place-card span{
+    display: block;
+    margin: 10px 0 25px;
+    color: #777;
+}
+.place-card button{
+    margin-bottom: 20px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 30px;
+    background: #111827;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.place-card button:hover{
+    background: #c58b45;
+}
+
+/* ===================== TABLET ===================== */
+
+@media (max-width: 992px){
+
+    .destination-hero{
+        height: 70vh;
+        padding: 0 30px;
+    }
+
+    .destination-content h1{
+        font-size: 48px;
+    }
+
+    .destination-content h4{
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .place-box{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .place-card{
+        width: 47%;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media (max-width: 768px){
+
+    .destination-hero{
+        height: 60vh;
+        padding: 0 20px;
+    }
+
+    .destination-content p{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .destination-content h1{
+        font-size: 34px;
+    }
+
+    .destination-content h4{
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .destination-content button{
+        padding: 12px 25px;
+    }
+
+    .places{
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    .places h2{
+        font-size: 30px;
+    }
+
+    .places > p{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .place-box{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .place-card{
+        width: 100%;
+    }
+
+    .place-card img{
+        height: 220px;
+    }
+
+}   

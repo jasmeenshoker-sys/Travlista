@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #f8f8f8;
+}
+
+.navbar{
+    width: 100%;
+    height: 90px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    z-index: 1000;
+}
+
+.logo h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    color: #111;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    text-decoration: none;
+}
+
+.menu ul li{
+    font-size: 17px;
+    font-weight: 550;
+    color: #222;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+     text-decoration: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a:hover{
+    color: #c58b45;
+}
+
+.menu ul li:hover{
+   color: #c58b45;
+    transform: scale(1.08);
+}
+
+
+.login-btn{
+    background:#222;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+
+.login-btn:hover{
+    background:#000;
+    color:white;
+    transform:translateY(-3px);
+}
+

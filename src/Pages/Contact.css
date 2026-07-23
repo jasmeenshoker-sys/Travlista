@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+.contact-hero{
+    width:100%;
+    height:75vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.contact-text{
+    color:white;
+}
+
+.contact-text p{
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.contact-text h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.contact-text h4{
+    width:650px;
+    line-height:1.8;
+    font-weight:400;
+}
+
+.contact{
+    width:85%;
+    margin:100px auto;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.contact>p{
+    color:#666;
+    margin-bottom:50px;
+}
+
+.contact-box{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.info{
+    flex:1;
+    text-align:left;
+}
+
+.info div{
+    margin-bottom:35px;
+}
+
+.info h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.info p{
+    color:#666;
+}
+
+.form{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form input,
+.form textarea{
+    width:100%;
+    padding:15px 20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+.form textarea{
+    height:150px;
+    resize:none;
+}
+
+.form button{
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#222;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.form button:hover{
+    transform:translateY(-3px);
+}
