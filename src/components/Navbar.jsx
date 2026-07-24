@@ -9,7 +9,7 @@ const Navbar = () => {
 
     <div className="navbar">
         <div className="logo">
-            <h2>Travelista</h2>
+            <h2>Travel</h2>
         </div>
         
         <div className="menu">
